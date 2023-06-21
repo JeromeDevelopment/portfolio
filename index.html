@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- LIBRERIES -->
+    <script src="https://kit.fontawesome.com/68d5df501b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- FONTS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@700&family=Varela+Round&family=Poppins:wght@400;600&family=Nunito+Sans:wght@800;1000&display=swap');
+    </style>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <!-- SCRIPT -->
+    <script defer src="./static/js/main.js"></script>
+    <script defer src="./static/js/index.js"></script>
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header>
+        <nav class="main-links">
+            <div class="logo">JEROME</div>
+            <nav class="navegation">
+                <a href="#services-anchor" class="navlink">SERVICES</a><a href="#" class="navlink">PROYECTS</a><a href="#" class="navlink">CERTIFICATES</a><a href="#" class="navlink">ABOUT</a>
+            </nav>
+        </nav>
+        <nav class="secundary-links">
+            <a href="#" class="navlink burger-menu">BURGER_MENU</a>
+            <a href="#" class="navlink contact-us">CONTACT US</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="slogan">Look<br>beyond<br>limits</h2>
+                <div class="hero-buttons-container">
+                    <a href="#" class="get-in-touch">Get in touch</a>
+                    <a href="#" class="inbox-button"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <canvas id="draw-frame"></canvas>
+        </section>
+        <section class="subsection quote-section">
+            <div style="display: flex; justify-content: space-between;">
+                <p>So, he is very<br>proactive and work<br>to be even better,<br>salutes!</p>
+                <i class="fa-solid fa-quote-right quote"></i>
+            </div>
+            <a href="https://something.com/" target="_blank" style="font-family: Poppins, sans-serif;">
+                <div class="user-quote">
+                    <div class="quoted-user-image" style="background-image: url('https://import.cdn.thinkific.com/220744/1Oz96MKTG24s1wWJ5Fz9_david-sanchez-jimenez-min.jpg');"></div>
+                    <p><i>David Sanchez</i></p>
+                </div>
+            </a>
+        </section>
+        <section class="subsection s-center quoted-text-centered">
+            <h2>Work with me and<br>let's design a 
+                <span class="invert-animation">
+                    <div class="invert-filter"></div>creative
+                </span>
+                <br>
+                <span class="invert-animation">
+                    <div class="invert-filter"></div>proyect</span>
+                with no limits.
+                <br>
+                Just think and
+                <span class="invert-animation"><div class="invert-filter"></div>make</span>
+                <br>
+                <span class="invert-animation"><div class="invert-filter"></div>your dreams.</span>
+            </h2>
+        </section>
+        <section class="subsection quote-section">
+            <div style="display: flex; justify-content: space-between;">
+                <p>Your knowledge<br>and skills amaze me<br>and your work<br>is impeccable.<br>Congratulations!</p>
+                <i class="fa-solid fa-quote-right quote"></i>
+            </div>
+            <a href="https://antoniosarosi.com/" target="_blank" style="font-family: Poppins, sans-serif;">
+                <div class="user-quote">
+                    <div class="quoted-user-image" style="background-image: url('https://yt3.googleusercontent.com/ucoGVKrE8yOhOleGaT0zc_-sAbZ5axAN7n_euzL9gsvKgzAXY0E95smUJS3c47vRGTSVyOeI=s176-c-k-c0x00ffffff-no-rj');"></div>
+                    <p><i>Antonio Sarosi</i></p>
+                </div>
+            </a>
+        </section>
+        <section class="subsection video-section">
+            <video loop muted preload="auto" playsinline autoplay>
+                <source src="https://wethinkelastic.com//assets/videos/video-start.mp4">
+            </video>
+        </section>
+        <section class="subsection section-plane-info" id="services-anchor" style="grid-column: 2 / 4; border-left: 0; padding: 6%;">
+            <div>
+                <h2 class="title-right-align"><span class="invert-animation"><div class="invert-filter"></div>FULL-STACK</span> DEVELOPMENT</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum reprehenderit ipsum non, similique quae architecto amet dignissimos culpa inventore aperiam dolor!</p>
+            </div>
+            <div class="section-plane-info-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-angular"></i>
+                <i class="fa-brands fa-vuejs"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-redhat"></i>
+            </div>
+        </section>
+        <section class="subsection section-plane-info" style="grid-column: 1 / 3; border-right: 0; padding: 6%;">
+            <div>
+                <h2>BRANDING <span class="invert-animation"><div class="invert-filter"></div>AND DESIGN</span></h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum reprehenderit ipsum non, similique quae architecto!</p>
+            </div>
+            <div class="section-plane-info-icons">
+                <img src="./assets/images/beev_logo.svg" alt="beev logo">
+                <img src="./assets/images/lambs_logo.svg" alt="lambs logo">
+                <img src="./assets/images/caval_logo.svg" alt="caval logo">
+                <img src="./assets/images/trone_logo.svg" alt="trone logo">
+                <img src="./assets/images/geants_logo.svg" alt="geants logo">
+            </div>
+        </section>
+        <section class="subsection video-section">
+            <video loop muted preload="auto" playsinline autoplay>
+                <source src="https://wethinkelastic.com//assets/videos/video-start.mp4">
+            </video>
+        </section>
+        <section class="subsection branding-section">
+            <div class="logo">
+                JEROME
+            </div>
+        </section>
+        <section class="subsection contact-section section-plane-info" style="grid-column: 2 / 4; border-left: 0; padding: 6%;">
+            <h2>LET'S CREATE <span class="invert-animation"><div class="invert-filter"></div>SOMETHING</span></h2>
+        </section>
+    </main>
+</body>
+</html>

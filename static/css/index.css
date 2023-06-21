@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'equilibrium';
+    src: url('../../assets/fonts/equilibrium.ttf');
+}
+
+main {
+    margin: 0px var(--c-m);
+    background-color: var(--fg);
+    color: var(--fg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+}
+
+.hero, #draw-frame, .subsection {
+    border-radius: var(--sts-br);
+}
+
+.quote {
+    font-size: var(--s-i-sz);
+}
+
+i {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.hero {
+    position: relative;
+    border: 2px solid var(--fg);
+    width: 100%;
+    max-height: 700px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px var(--hc-p);
+    background-color: var(--bg);
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.slogan {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: var(--sg-s);
+    letter-spacing: -0.2rem;
+    line-height: 95%;
+}
+
+.hero-buttons-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: var(--h-bts-s);
+    font-size: 1.2rem;
+    margin-top: var(--h-bts-tm);
+    position: relative;
+    z-index: 10;
+}
+
+.get-in-touch {
+    border: 1px solid var(--fg);
+    padding: 20px 60px;
+    border-radius: 50px;
+    font-weight: 900;
+}
+
+.inbox-button {
+    padding: 20px 20px;
+    border-radius: 50%;
+    border: 1px solid var(--fg);
+}
+
+#draw-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subsection {
+    background-color: var(--bg);
+    border: 2px solid var(--fg); 
+    border-top: 0;
+    font-family: 'Poppins', monospace;
+    font-size: var(--s-p-fs);
+    padding: var(--s-p-in);
+}
+
+.s-center {
+    border: 0;
+    border-bottom: 2px solid var(--fg);
+}
+
+.subsection p {
+    white-space: nowrap;
+}
+
+.quote-section {
+    background-color:rgb(232, 231, 238);
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.user-quote {
+    font-size: var(--q-t-sz);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+}
+
+.quoted-user-image {
+    width: var(--q-u-i-s);
+    height: var(--q-u-i-s);
+    border-radius: 50%;
+    background: rgb(20, 50, 80);
+    background-size: cover;
+}
+
+.quoted-text-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quoted-text-centered > h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: -0.05rem;
+    line-height: 105%;
+    white-space: nowrap;
+    font-size: var(--q-c-t-s);
+}
+
+.invert-animation {
+    position: relative;
+    color: black;
+    padding: 5px;
+}
+
+.invert-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    transform: translateY(20%);
+    background-color: white;
+    mix-blend-mode: difference;
+}
+
+.video-section {
+    position: relative;
+    padding: 0 !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-section video {
+    height: 100%;
+}
+
+.title-right-align {
+    text-align: right;
+}
+
+.section-plane-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.section-plane-info h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 4rem;
+}
+
+.section-plane-info p {
+    white-space: wrap;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.section-plane-info-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-plane-info-icons > i {
+    font-size: 4.5rem;
+}
+
+.branding-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fg);
+}
+
+.branding-section .logo {
+    font-size: 6rem;
+    color: white;
+}
+
+html:root {
+    /* BACKGROUND */
+    --bg: rgb(245, 245, 245);
+    /* FOREGROUND */
+    --fg: #262626;
+    /* CONTENT MARGIN */
+    --c-m: 35px;
+    /* HERO PADDING */
+    --hc-p: 50px;
+    /* SLOGAN SIZE */
+    --sg-s: 7.5rem;
+    /* HERO BUTTONS SPACING */
+    --h-bts-s: 1rem;
+    /* HERO BUTTTONS TOP MARGIN */
+    --h-bts-tm: 75px;
+    /* SECTIONS BORDER RADIUS */
+    --sts-br: 35px;
+    /* SECTION PARAGRAPH FONT SIZE */
+    --s-p-fs: 2.25rem;
+    /* SECTION PADDING IN*/
+    --s-p-in: 10%;
+    /* SECTION ICONS SIZING */
+    --s-i-sz: 2.5rem;
+    /* QUOTED TEXT SIZE*/
+    --q-t-sz: 1.5rem;
+    /* QUOTED USER ICON SIZE */
+    --q-u-i-s: 70px;
+    /* QUOTED CENTERED TEXT SIZE */
+    --q-c-t-s: 3rem;
+}
+/*
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Geologica', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
